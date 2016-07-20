@@ -1,4 +1,17 @@
 <template args="$controller">
-  <h2>Hello World, {$controller.name}</h2>
-  <button click.trigger="$controller.showName()">show my name!</button>
+  <div class="col s4">
+    <div class="col s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Hello World</span>
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <span>{$controller.name}</span>
+        </div>
+        <div class="card-action">
+          <a href="#" click.trigger="$controller.showName()">This is a link</a>
+          <a click.trigger="$controller.showName()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">chat_bubble_outline</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>

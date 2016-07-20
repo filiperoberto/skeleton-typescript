@@ -1,6 +1,6 @@
 export class MyBasicApp{
-	private title:string;
+	private tittle: string;
     constructor(){
-      this.title = "ferrugemjs";
+	   this.tittle = "ferrugemjs";
     }
 }

@@ -1,0 +1,26 @@
+<template args="$controller">
+	<div class="col s8">
+		<form action="#!" class="col s12">
+			<input change.trigger="$controller.addTitle($event.target.value);$event.target.value=''">
+		</form>	
+		<div class="col s12">
+			<ul class="collection">
+		      <a href="#!" class="collection-item" each="todo in $controller.todos">
+		              <span>
+		              	{todo.desc}
+		              </span>
+		      				      		     		
+		      		  <div class="switch secondary-content">
+					    <label>
+					      Off
+					      <input checked="{todo.done}" type="checkbox">
+					      <span class="lever"></span>
+					      On
+					    </label>
+					  </div>
+		      </a>
+		    </ul>
+		    <h4>count: {$controller.titles.length}</h4>
+		</div>
+	</div>
+</template>
