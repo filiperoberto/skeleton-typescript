@@ -6,6 +6,7 @@
 
 ####install
 #####npm install
+#####npm run jspm install
 
 
 ####tasks
