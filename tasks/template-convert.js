@@ -15,6 +15,7 @@ gulp.task('template',function(){
     .pipe(replace(/<require from="([^"]*)">/g, '<script>_$ferrugemRegister.add("$1");</script>'))
     .pipe(superviewsjs({mode:"amd"}))
     .pipe(replace(/elementOpen\(("\w+?-[^"]+")([^)]+)\)/g,'_$ferrugemLoad.load($1$2).content(function(){'))
+    .pipe(replace(/elementOpen\(("\w+?-[^"]+")\)/g,'_$ferrugemLoad.load($1,"nokey",[]).content(function(){'))
     .pipe(replace(/elementClose\("\w+?-+\w.+\)+?/g,'});'))
     .pipe(replace('elementClose("content")',''))
     .pipe(replace('elementOpen("content")','this.content();'))
