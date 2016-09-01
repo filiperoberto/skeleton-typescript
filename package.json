@@ -1,6 +1,6 @@
 {
   "name": "ferrugemjs-skeleton-typescript",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "a Ferrugemjs-skeleton-typescript",
   "main": false,
   "scripts": {
@@ -18,13 +18,13 @@
     "dependencies": {
       "es6-shim": "npm:es6-shim@^0.35.1",
       "event-emitter-lite": "npm:event-emitter-lite@^1.0.5",
-      "ferrugemjs": "npm:ferrugemjs@0.8.5",
+      "ferrugemjs": "npm:ferrugemjs@0.9.1",
       "incremental-dom": "npm:incremental-dom@^0.4.1",
       "ts-helpers": "npm:ts-helpers@^1.1.1"
     },
     "devDependencies": {},
     "overrides": {
-      "npm:ferrugemjs@0.8.5": {
+      "npm:ferrugemjs@0.9.1": {
         "dependencies": {}
       }
     }
