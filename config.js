@@ -10,7 +10,7 @@ System.config({
   map: {
     "es6-shim": "npm:es6-shim@0.35.1",
     "event-emitter-lite": "npm:event-emitter-lite@1.0.5",
-    "ferrugemjs": "npm:ferrugemjs@0.9.1",
+    "ferrugemjs": "npm:ferrugemjs@0.9.3",
     "incremental-dom": "npm:incremental-dom@0.4.1",
     "ts-helpers": "npm:ts-helpers@1.1.1",
     "github:jspm/nodelibs-assert@0.1.0": {
