@@ -4,16 +4,16 @@
 
 [![NPM](https://nodei.co/npm/ferrugemjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ferrugemjs/)
 
-####install
-#####npm install
-#####npm run jspm install
+#### install
+#####npm install //install all dependencies
+#####jspm install //install all jspm dependencies
+or
+#####node_modules/.bin/jspm install 
 
 
-####tasks
+#### tasks
 #####npm run watch 
 transpiller files from typescript to es5, convert the html templates to Incremental DOM javascript resource.
-#####npm i
-update npm and jspm files.
 
 
 
