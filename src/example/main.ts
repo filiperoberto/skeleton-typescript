@@ -1,11 +1,11 @@
 export class MyBasicApp{
-	private tittle: string;
-	private mexer: boolean;
+    private tittle: string;
+    private canChange: boolean;
     constructor(){
 	   this.tittle = "ferrugemjs";
     }
-    private devoAtualizar():boolean{
-		this.mexer = !this.mexer;
-		return this.mexer;
+    private change():boolean{
+		this.canChange = !this.canChange;
+		return this.canChange;
     }
 }
