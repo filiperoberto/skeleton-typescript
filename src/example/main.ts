@@ -1,11 +1,6 @@
 export class MyBasicApp{
-    private tittle: string;
-    private canChange: boolean;
+    private title: string;
     constructor(){
-	   this.tittle = "ferrugemjs";
-    }
-    private change():boolean{
-		this.canChange = !this.canChange;
-		return this.canChange;
+	   this.title = "ferrugemjs";
     }
 }

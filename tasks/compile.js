@@ -18,16 +18,6 @@ gulp.task('compile',function(){
     return  compile_ts("./src/**/*.ts");
 });
 
-gulp.task('compile',function(){
-    return gulp.src([
-			"./src/**/*.ts"
-            ,"./jspm_packages/npm/event-emitter-lite@*/*.d.ts"
-        ])
-        .pipe(ts(tsConfig))
-        .pipe(uglify())
-        .pipe(gulp.dest(tsConfig.outDir));   
-});
-
 gulp.task('copy_assets',function(){
     return gulp.src([
         "./src/**/assets/**/*.*"
