@@ -15,16 +15,9 @@ gulp.task('reload',function(){
 	connect.reload();
 });
 
-gulp.task('watch',['compile','template','copy_assets'],function(){
+gulp.task('watch',['compile','copy_assets'],function(){
     gulp.run('static_serve');
-    gulp.watch("./src/**/*.html", ['template']);
-    gulp.watch('./src/**/*.ts').on('change',function(file){
-        var search = "/";
-        var path = file.path.replace(/\\/g,"/");
-        var fileName = path.substring(path.lastIndexOf(search)+search.length,path.length);
-        compileTs("./src/**/"+fileName);
-    });
-    //gulp.watch('./src/**/*.ts', ['compile']);
+    gulp.watch('./src/**/*.ts',['compile']);
     gulp.watch('./src/**/assets/**/*.*', ['copy_assets']);
 
     gulp.watch('./dist/**/*.*').on('change',function(file){

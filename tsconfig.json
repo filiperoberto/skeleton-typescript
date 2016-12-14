@@ -3,7 +3,8 @@
         "target": "es5"
         ,"module": "amd"
         ,"moduleResolution": "classic"
-        ,"outDir": "./dist"
+        ,"outFile": "./dist/outfile.js"
+        ,"outDir" : "./dist"
         ,"experimentalDecorators": true
         ,"noImplicitAny":true		
         ,"sourceMap": false        
@@ -12,6 +13,12 @@
 		,"noEmitHelpers":true 
 		,"suppressImplicitAnyIndexErrors": true
     },
+    "files" : [
+
+    ],
+    "include": [
+        "src/**/*.ts"
+    ],
     "exclude": [
         "node_modules"
 		,"dist"
